@@ -1,0 +1,285 @@
+/*This loads the font to the website*/
+@font-face {
+    font-family: "kindOfRegular";
+    src: url('fonts/AGaramondPro-Regular.otf');
+}
+@font-face {
+    font-family: "kindOfBold";
+    src: url('fonts/AGaramondPro-Bold.otf');
+}
+
+* {
+    text-align: center;
+}
+
+.shadowed-text {
+    padding-top: 25px;
+    font-size: 8vw;
+    font-family: kindOfRegular;
+    color: #1D1E2D;
+    text-shadow:
+    0 0 2px #FFFFFF,
+    0 0 4px #FFFFFF,
+    0 0 4px #FFFFFF,
+    0 0 2px #FFFFFF;
+ 
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+.shadowed-text2 {
+    margin: auto;
+    font-size: 10vw;
+    font-family: kindOfBold;
+    font-weight: 900;
+    color: #4D587F;
+    text-shadow:
+    0 0 2px #FFFFFF,
+    0 0 4px #FFFFFF,
+    0 0 4px #FFFFFF,
+    0 0 2px #FFFFFF;
+}
+
+html, body {
+    background-image: url("images/bg2.jpg");
+    background-color: black;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+   
+h4 {
+    margin-bottom: -20px;
+    font-family: kindOfRegular;
+    font-size: 25px;
+    color:white;
+    text-align: center;
+    text-shadow:
+    0 0 2px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 2px #000000;
+}
+.maintext { 
+    font-family: kindOfRegular;
+    font-size: 25px;
+    color:rgb(255, 255, 255);
+    text-align: left;
+    text-indent: 20px;
+
+    padding-left: 25px;
+
+    text-shadow:
+    0 0 2px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 2px #000000;
+}
+
+
+/*This effects the main box holding the image and text*/
+.flex-container {
+    display: flex;
+    flex-direction: row;
+
+
+    justify-content: center;
+    padding-left: 30%;
+    padding-right: 30%;
+    gap: 15px;
+}
+
+.image2 {
+    width:500px; 
+    height:445px;
+}
+
+.buyNow {
+    background-image: url(images/Amazon_Kindle_logo.svg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15vw 6vh;
+
+    background-color: rgba(178, 180, 178, 0.445);
+    border-radius: 10px;
+    border-color: black;
+    padding: 5px;
+    
+    transition-duration: 0.4s;
+    cursor: pointer; 
+
+    width:20vw; 
+    height:7vh;
+
+}
+
+.buyNow:hover {
+    background-color: rgba(178, 180, 178, 0.658);
+}
+
+
+.footing {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: black;               
+    width: 100%;
+    margin-bottom: 0px;
+
+    font-family: kindOfRegular;
+    font-size: 20px;
+    color:white;
+    text-align: center;
+
+    text-shadow:
+    0 0 2px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 2px #000000;
+}
+
+.copyRight {
+    float: right;
+    padding-right: 5px;
+}
+
+.image {
+    padding: 5%;
+
+}
+
+img {
+    max-width: none;
+    max-height: 445px;
+    display: block;
+    margin: auto;
+}
+
+.text {
+    min-width: 100%;
+    padding: auto;
+    margin-bottom: 30px;
+}
+
+/*Half Window*/
+@media(max-width: 1040px) {
+    
+    .buyNow {
+        background-image: url(images/Amazon_Kindle_logo.svg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 20vw 4vh;
+    
+        background-color: rgba(178, 180, 178, 0.445);
+        border-radius: 10px;
+        border-color: black;
+        padding: 5px;
+        
+        transition-duration: 0.4s;
+        cursor: pointer; 
+    
+        width:30vw; 
+        height:5vh;
+
+       
+    
+    }
+    
+    .buyNow:hover {
+        background-color: rgba(178, 180, 178, 0.658);
+    }
+}
+
+/*Mobile View*/
+@media (max-width: 768px) {
+   html, body {
+        background-image: url("images/bg2.jpg");
+        background-color: #3e3e3e;
+        background-position: bottom;
+        background-repeat: repeat;
+        
+    }
+
+    .image2 {
+        width:400px; 
+        height:345px;
+    }
+    h1 {
+        text-align: center;
+        padding: 20px;
+     
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-items: center; /* Center items vertically if you want */
+        text-align: center;
+    }
+    
+    .text {
+        position: relative;
+        width: 100%;
+        
+      
+    }
+    
+    h4 {
+        margin: auto;
+    }
+    .maintext {
+        font-family: kindOfRegular;
+        font-size: 2vh;
+        color:rgb(255, 255, 255);
+        text-align: left;
+        text-indent: 20px;
+
+        margin-left: -100px;
+        margin-right: -100px;
+        padding-left: 10px;
+
+        text-shadow:
+        0 0 2px #000000,
+        0 0 4px #000000,
+        0 0 4px #000000,
+        0 0 2px #000000;
+    }
+    .buyNow {
+        background-image: url(images/Amazon_Kindle_logo.svg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 35vw 5vh;
+    
+        background-color: rgba(178, 180, 178, 0.445);
+        border-radius: 10px;
+        border-color: black;
+        padding: 5px;
+        
+        transition-duration: 0.4s;
+        cursor: pointer; 
+    
+        width:50vw; 
+        height:5vh;
+
+        margin-bottom: 10px;
+        margin-left: -20px;
+    
+    }
+    
+    .buyNow:hover {
+        background-color: rgba(178, 180, 178, 0.658);
+    }
+}
+
+@media (max-width: 768px) {
+    .footing {
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
